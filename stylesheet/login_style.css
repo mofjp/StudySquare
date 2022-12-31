@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+/* {
+	outline: 1px solid magenta;
+}*/
+
+/* 共通 */
+
+html {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+    background-color: rgba(0,0,0, 0.25);
+}
+
+.login_menu {
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+	color: #3a81c1;
+	width: 65%;
+	margin-bottom: 10px;
+	font-size: 3rem;
+	font-family: 'Gugi', cursive !important;
+	text-align: center;
+	letter-spacing: 0.25rem;
+}
+
+form {
+	width: 65%;
+	font-size: 1rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputdata  {
+	padding: 20px;
+	margin-top: 20px;
+	border: 1px solid #000;
+	width: 70%;
+}
+
+.inputdata:focus {
+	border: 1px solid #3a81c1;
+	box-shadow: 0 0 0 2px #3a81c1;
+}
+
+.error {
+	padding: 10px;
+	color: #ee7850;
+}
+
+.login {
+	width: 22.5%;
+	padding: 8px;
+	margin: 20px 0 20px 0;
+	font-size: 1.2rem !important;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	color: #fff;
+	background-color: #000;
+	border: 2px solid #000;
+}
+
+.login:hover {
+	background-color: #3a81c1;
+	border: 2px solid #3a81c1;
+}

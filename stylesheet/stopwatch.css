@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+/* {
+	outline: 1px solid magenta;
+}*/
+
+/* 共通 */
+
+html {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #3a81c1;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background-color: rgba(0,0,0, 0.25);
+}
+
+/* ------------------------------------------------- */
+
+header {
+    position: fixed;
+    padding: 20px 0 0 20px;
+}
+
+header a {
+    font-size: 1.25rem;
+}
+
+header a h1 {
+	font-family: 'Gugi', cursive;
+}
+
+#stopwatch {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#time {
+    font-size: 8rem;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#buttons {
+    margin: 50px 25px 0 0;
+    font-size: 3rem;
+}
+
+#buttons button {
+    margin: 0 10px;
+}
+
+#container form {
+    margin-top: 50px;
+}
+
+#submit {
+    font-family: inherit;
+    font-size: 20px;
+    background: #3a81c1;
+    color: #fff;
+    height: 5rem;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+}
+  
+#submit span {
+    display: block;
+    margin-left: 0.5em;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.1em;
+}
+  
+#submit svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+  
+#submit:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+  
+#submit:hover svg {
+    transform: translateX(1.5rem) rotate(45deg) scale(1.1);
+}
+  
+#submit:hover span {
+    transform: translateX(5em);
+}
+  
+#submit:active {
+    transform: scale(0.95);
+}
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+
+#container #buttons2 {
+    display: flex;
+}
+
+
+#container #back {
+    margin: 50px 25px 0 0;
+    font-family: inherit;
+    font-size: 20px;
+    background: #505050;
+    color: #fff;
+    height: 5rem;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+}
+
+#container i {
+    margin-right: 10px;
+}
+
+p {
+    margin-top: 25px;
+}

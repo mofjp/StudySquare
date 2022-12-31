@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+/* {
+	outline: 1px solid magenta;
+}*/
+
+/* 共通 */
+
+html {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+h1,h2 {
+    color: #3a81c1;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background-color: rgba(0,0,0, 0.25);
+}
+
+i {
+    margin-right: 10px;
+}
+
+/* ------------------------------------------------- */
+
+header {
+    position: fixed;
+    padding: 20px 0 0 20px;
+}
+
+header a {
+    font-size: 1.25rem;
+}
+
+header a h1 {
+	font-family: 'Gugi', cursive;
+}
+
+/* ------------------------------------------------- */
+
+#timer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ------------------------------------------------- */
+
+#container #mainpage #form1 p {
+    color: #3a81c1;
+    font-size: 1.5rem;
+}
+
+#container #mainpage #form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ms {
+    font-size: 5.5rem;
+    padding: 25px;
+    color: #3a81c1;
+}
+
+.ms input {
+    width: 2em;
+    border: 1px solid;
+    border-radius: 16px;
+    text-align: right;
+}
+
+.ms span {
+    font-size: 3rem;
+}
+
+#buttons1 {
+    margin-top: 25px;
+    font-size: 3rem;
+}
+
+#buttons1 button,input {
+    margin: 0 10px;
+}
+
+/* ------------------------------------------------- */
+
+#buttons2 {
+    display: flex;
+    justify-content: center;
+}
+
+#buttons2 #form2 {
+    margin: 50px 0 0 25px;
+}
+
+#submit {
+    font-family: inherit;
+    font-size: 20px;
+    background: #3a81c1;
+    color: #fff;
+    height: 5rem;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+}
+  
+#submit span {
+    display: block;
+    margin-left: 0.5em;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.1em;
+}
+  
+#submit svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+  
+#submit:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+  
+#submit:hover svg {
+    transform: translateX(1.5rem) rotate(45deg) scale(1.1);
+}
+  
+#submit:hover span {
+    transform: translateX(5em);
+}
+  
+#submit:active {
+    transform: scale(0.95);
+}
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+
+#back {
+    margin: 50px 25px 0 0;
+    font-family: inherit;
+    font-size: 20px;
+    background: #505050;
+    color: #fff;
+    height: 5rem;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+}

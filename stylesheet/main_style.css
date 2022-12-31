@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+/* {
+	outline: 1px solid magenta;
+}*/
+
+/* 共通 */
+
+html {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background-color: rgba(0,0,0, 0.25);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/*::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 1);
+}*/
+ 
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0, 0.2);
+}
+
+@media screen and (max-width: 1080px) {
+    html {
+        display: none;
+    } 
+
+}
+
+/* ------------------------------------------------- */
+
+.pc-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    width: 22%;
+    left: 0;
+    padding: 20px 0 0 20px;
+}
+
+.title {
+    color: #3a81c1;
+    font-size: 1.25rem;
+	font-family: 'Gugi', cursive;
+}
+
+.menu form ul {
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.menu form ul li {
+    padding-bottom: 10px;
+    font-size: 1.35rem;
+	font-weight: bold;
+}
+
+.menu form ul li button {
+    color: #505050;
+}
+
+.menu form ul li button:hover {
+    color: #3a81c1;
+}
+
+#Audio-Control {
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 50px;
+    padding-left: 40px;
+}
+
+#Audio-Control h3 {
+    letter-spacing: 0.1rem;
+    margin-right: 20px;
+}
+
+#Audio-Control button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+  
+#Audio-Control button {
+    border: 2px solid #ccc;
+    width: 40px;
+    float: left;
+    padding: 5px 0;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+  
+#Audio-Control button.on {
+    border-left: none;
+}
+  
+#Audio-Control button.off {
+    border-right: none;
+}
+  
+#Audio-Control button.active {
+    background: #ccc;
+}
+  
+#Audio-Control button:not(.active):hover {
+    background: rgba(204, 204, 204, 0.3);
+}
+
+/* ------------------------------------------------- */
+
+.main {   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 60%;
+    margin-left: 22%;
+}
+
+/* ------------------------------------------------- */
+
+.right {   
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 18%;
+    right: 0;
+    padding: 20px 10px 10px 10px;
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+}
+
+.ranking {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right .ranking h2 {
+    top: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #3a81c1;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.right .ranking h3 {
+    top: 0;
+    padding: 10px;
+    margin-top: 10px;
+    color: #3a81c1;
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.right .name {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* ------------------------------------------------- */

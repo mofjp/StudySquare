@@ -1,0 +1,33 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+td,th {
+    /*border: 2px solid #ccc;*/
+    text-align: center;
+}
+
+th {
+    padding: 10px 0;
+    color: #000;
+    border-bottom: 2px solid #ccc;
+    /*background-color: #ccc;*/
+}
+
+td {
+    padding: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no {
+    width: 1rem;
+}
+
+
+
+/*table tr:nth-child(odd) {
+    background-color: #efefef
+}*/
